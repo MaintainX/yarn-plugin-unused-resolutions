@@ -1,0 +1,32 @@
+{
+  "name": "yarn-plugin-unused-resolutions",
+  "description": "A Yarn plugin that checks for unused resolutions in package.json",
+  "version": "0.1.0",
+  "private": true,
+  "main": "./src/index.ts",
+  "license": "MIT",
+  "scripts": {
+    "build": "yarn clean && builder build plugin && yarn test",
+    "build:debug": "builder build plugin --source-map --no-minify --metafile",
+    "clean": "rimraf bundles",
+    "format": "prettier --write .",
+    "test": "sh tests.sh",
+    "postinstall": "yarn husky"
+  },
+  "dependencies": {
+    "@yarnpkg/cli": "^4.9.1",
+    "@yarnpkg/core": "^4.4.1",
+    "@yarnpkg/fslib": "^3.1.2",
+    "clipanion": "^3.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@yarnpkg/builder": "^4.2.1",
+    "husky": "^9.1.7",
+    "prettier": "^3.5.3",
+    "prettier-plugin-organize-imports": "^4.1.0",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.8.3"
+  },
+  "packageManager": "yarn@4.9.1"
+}

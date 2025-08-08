@@ -1,0 +1,12 @@
+node_modules
+
+# Yarn
+.yarn/*
+**/.yarn/build-state.yml
+**/.yarn/install-state.gz
+!.yarn/patches
+!.yarn/releases
+
+# Build
+bundles/*
+!bundles/@yarnpkg/plugin-unused-resolutions.js
