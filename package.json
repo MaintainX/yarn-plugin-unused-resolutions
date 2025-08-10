@@ -6,11 +6,11 @@
   "main": "./src/index.ts",
   "license": "MIT",
   "scripts": {
-    "build": "yarn clean && builder build plugin && yarn test",
+    "build": "yarn clean && builder build plugin",
     "build:debug": "builder build plugin --source-map --no-minify --metafile",
     "clean": "rimraf bundles",
     "format": "prettier --write .",
-    "test": "sh tests.sh",
+    "test": "node test.js",
     "postinstall": "yarn husky"
   },
   "dependencies": {

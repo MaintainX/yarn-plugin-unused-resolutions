@@ -1,4 +1,5 @@
 #!/bin/sh
 
 yarn build
+yarn test
 git add bundles

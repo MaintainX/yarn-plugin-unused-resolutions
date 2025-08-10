@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "resolutions": {
     "lodash": "4.17.21",
-    "react": "18.2.0"
+    "react": "18.2.0",
+    "loose-envify/js-tokens@^3.0.0 || ^4.0.0": "4.0.0"
   },
   "dependencies": {
     "lodash": "^4.17.0",

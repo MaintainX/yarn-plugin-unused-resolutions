@@ -18,8 +18,8 @@ If you have unused resolutions, you'll see output like this:
 
 ```
 Found 2 unused resolution(s):
-  - lodash@^4.17.21 in my-workspace
-  - react@^18.0.0 in another-workspace
+  - "unused-package": "1.0.0"
+  - "loose-envify/unused@^2.0.0": "4.0.0"
 
 These resolutions are defined in package.json but not used by Yarn.
 Consider removing them to keep your package.json clean.
@@ -27,29 +27,12 @@ Consider removing them to keep your package.json clean.
 
 ## Configuration
 
-### Verbose Logging
-
-You can enable verbose logging to see detailed information about which resolutions are being checked:
-
-```bash
-YARN_ENABLE_VERBOSE_LOGGING=1 yarn install
-```
-
-This will show you:
-- How many resolutions are being checked in each workspace
-- Which resolutions are being used vs unused
-- Detailed information about the checking process
-
 ## How it Works
 
-The plugin hooks into Yarn's `afterAllInstalled` lifecycle event to:
+The plugin hooks into Yarn's `reduceDependency` lifecycle event to reproduce the same logic that Yarn uses to resolve dependencies.
+It adds a flag on the resolutions that are used to alias a dependency.
 
-1. Iterate through all workspaces in your project
-2. Check each workspace's `package.json` for `resolutions` field
-3. For each resolution, verify if it's actually used in the lockfile
-4. Report any resolutions that are defined but not used
-
-This helps you keep your `package.json` files clean by identifying resolutions that are no longer needed.
+Then, it hooks into Yarn's `afterAllInstalled` lifecycle event to check for resolutions that are defined but not used.
 
 ## Common Use Cases
 
