@@ -62,6 +62,11 @@ const plugin: Plugin<Hooks> = {
       return dependency;
     },
     async afterAllInstalled(project, opts) {
+      if (opts.persistProject === false) {
+        // This can be false when doing a focused install since not all workspaces are installed
+        // We don't want to report errors in this case since a lot of resolutions are likely to be unused
+        return;
+      }
       const resolutions = project.topLevelWorkspace.manifest.resolutions;
       const unusedResolutions = resolutions.filter((resolution) => !(resolution as any).used);
       if (unusedResolutions.length > 0) {
