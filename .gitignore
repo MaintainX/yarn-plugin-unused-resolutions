@@ -9,4 +9,6 @@ node_modules
 
 # Build
 bundles/*
+!bundles/@yarnpkg
+bundles/@yarnpkg/*
 !bundles/@yarnpkg/plugin-unused-resolutions.js
