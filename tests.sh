@@ -15,7 +15,7 @@ echo "Test passed"
 cd ../basic || exit 1
 echo "Testing basic..."
 result=$(yarn install)
-if echo "$result" | grep -q "unused-package@unknown in test-workspace"; then
+if echo "$result" | grep -q "unused-package in test-workspace"; then
   echo "Test passed"
 else
   echo "Test failed"

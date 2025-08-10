@@ -105,7 +105,7 @@ async function checkUnusedResolutions(project: Project, { report }: InstallOptio
         `Found ${unusedResolutions.length} unused resolution(s):`,
         ...unusedResolutions.map(({ descriptor, workspace }) => {
           const workspaceName = workspace.manifest.raw.name || workspace.cwd;
-          return `  - ${structUtils.stringifyDescriptor(descriptor)} in ${workspaceName}`;
+          return `  - ${structUtils.stringifyDescriptor(descriptor).replace("@unknown", "")} in ${workspaceName}`;
         }),
         "",
         "These resolutions are defined in package.json but not used by Yarn.",
