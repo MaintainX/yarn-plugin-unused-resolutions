@@ -5,7 +5,7 @@ This Yarn Berry plugin checks for unused resolutions in your `package.json` file
 ## Installation
 
 ```bash
-yarn plugin import https://raw.githubusercontent.com/MaintainX/yarn-plugin-unused-resolutions/refs/tags/v0.1.1/bundles/%40yarnpkg/plugin-unused-resolutions.js
+yarn plugin import https://raw.githubusercontent.com/MaintainX/yarn-plugin-unused-resolutions/refs/tags/v0.1.2/bundles/%40yarnpkg/plugin-unused-resolutions.js
 ```
 
 ## Usage
