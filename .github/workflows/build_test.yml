@@ -9,7 +9,8 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - run: yarn install
+      - run: yarn format
       - run: yarn build
       - run: yarn test
       # check the built bundle was committed
-      - run: git diff --exit-code bundles
+      - run: git diff --exit-code
