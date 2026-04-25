@@ -29,7 +29,7 @@
     "typescript": "^6.0.3"
   },
   "resolutions": {
-    "@yarnpkg/core/tar": "7.5.10"
+    "@yarnpkg/core/tar": "7.5.11"
   },
   "packageManager": "yarn@4.14.1"
 }
