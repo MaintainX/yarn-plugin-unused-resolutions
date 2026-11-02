@@ -370,7 +370,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^24.12.2":
+"@types/node@npm:*, @types/node@npm:24.12.2":
   version: 24.12.2
   resolution: "@types/node@npm:24.12.2"
   dependencies:
@@ -418,7 +418,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/builder@npm:^4.2.3":
+"@yarnpkg/builder@npm:4.2.3":
   version: 4.2.3
   resolution: "@yarnpkg/builder@npm:4.2.3"
   dependencies:
@@ -1624,7 +1624,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"husky@npm:^9.1.7":
+"husky@npm:9.1.7":
   version: 9.1.7
   resolution: "husky@npm:9.1.7"
   bin:
@@ -2141,7 +2141,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier-plugin-organize-imports@npm:^4.3.0":
+"prettier-plugin-organize-imports@npm:4.3.0":
   version: 4.3.0
   resolution: "prettier-plugin-organize-imports@npm:4.3.0"
   peerDependencies:
@@ -2155,7 +2155,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"prettier@npm:^3.8.3":
+"prettier@npm:3.8.3":
   version: 3.8.3
   resolution: "prettier@npm:3.8.3"
   bin:
@@ -2299,7 +2299,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"rimraf@npm:^6.1.3":
+"rimraf@npm:6.1.3":
   version: 6.1.3
   resolution: "rimraf@npm:6.1.3"
   dependencies:
@@ -2616,7 +2616,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@npm:^6.0.3":
+"typescript@npm:6.0.3":
   version: 6.0.3
   resolution: "typescript@npm:6.0.3"
   bin:
@@ -2626,7 +2626,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"typescript@patch:typescript@npm%3A^6.0.3#optional!builtin<compat/typescript>":
+"typescript@patch:typescript@npm%3A6.0.3#optional!builtin<compat/typescript>":
   version: 6.0.3
   resolution: "typescript@patch:typescript@npm%3A6.0.3#optional!builtin<compat/typescript>::version=6.0.3&hash=5786d5"
   bin:
@@ -2728,16 +2728,16 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "yarn-plugin-unused-resolutions@workspace:."
   dependencies:
-    "@types/node": "npm:^24.12.2"
-    "@yarnpkg/builder": "npm:^4.2.3"
+    "@types/node": "npm:24.12.2"
+    "@yarnpkg/builder": "npm:4.2.3"
     "@yarnpkg/cli": "npm:^4.18.0"
     "@yarnpkg/core": "npm:^4.7.0"
     "@yarnpkg/fslib": "npm:^3.1.5"
-    husky: "npm:^9.1.7"
-    prettier: "npm:^3.8.3"
-    prettier-plugin-organize-imports: "npm:^4.3.0"
-    rimraf: "npm:^6.1.3"
-    typescript: "npm:^6.0.3"
+    husky: "npm:9.1.7"
+    prettier: "npm:3.8.3"
+    prettier-plugin-organize-imports: "npm:4.3.0"
+    rimraf: "npm:6.1.3"
+    typescript: "npm:6.0.3"
   languageName: unknown
   linkType: soft
 
