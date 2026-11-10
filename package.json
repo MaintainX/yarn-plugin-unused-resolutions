@@ -20,7 +20,7 @@
   },
   "devDependencies": {
     "@types/node": "26.6.6",
-    "@yarnpkg/builder": "4.2.3",
+    "@yarnpkg/builder": "4.2.4",
     "husky": "9.1.7",
     "prettier": "3.8.3",
     "prettier-plugin-organize-imports": "4.3.0",
