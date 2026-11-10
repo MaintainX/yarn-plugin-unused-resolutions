@@ -418,25 +418,25 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/builder@npm:4.2.3":
-  version: 4.2.3
-  resolution: "@yarnpkg/builder@npm:4.2.3"
+"@yarnpkg/builder@npm:4.2.4":
+  version: 4.2.4
+  resolution: "@yarnpkg/builder@npm:4.2.4"
   dependencies:
-    "@yarnpkg/cli": "npm:^4.10.0"
-    "@yarnpkg/core": "npm:^4.4.4"
-    "@yarnpkg/fslib": "npm:^3.1.3"
+    "@yarnpkg/cli": "npm:^4.18.0"
+    "@yarnpkg/core": "npm:^4.9.1"
+    "@yarnpkg/fslib": "npm:^3.1.5"
     chalk: "npm:^4.1.2"
     clipanion: "npm:^4.0.0-rc.2"
     esbuild: "npm:esbuild-wasm@^0.23.0"
-    semver: "npm:^7.1.2"
+    semver: "npm:^7.8.5"
     tslib: "npm:^2.4.0"
   bin:
     builder: ./lib/cli.js
-  checksum: 10c0/916578cee6a41dd69b7ab3a2b45595780e76bdca3c173b1c1139c14e9ea495a76638d7516c25bc4524ca8df303baaa180f294db9023110a1fb9a124d44a5ea92
+  checksum: 10c0/2eaa91d80cef844e8ee5d6ec11fef346a499f19e82e13171a7bf10e43ed3afe9a8229e91a7f9a8963e9055b5953f8003baaed5ff22b921eedf7f286c853144a1
   languageName: node
   linkType: hard
 
-"@yarnpkg/cli@npm:^4.10.0, @yarnpkg/cli@npm:^4.18.0":
+"@yarnpkg/cli@npm:^4.18.0":
   version: 4.18.0
   resolution: "@yarnpkg/cli@npm:4.18.0"
   dependencies:
@@ -481,7 +481,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@yarnpkg/core@npm:^4.4.4, @yarnpkg/core@npm:^4.7.0, @yarnpkg/core@npm:^4.9.1":
+"@yarnpkg/core@npm:^4.7.0, @yarnpkg/core@npm:^4.9.1":
   version: 4.9.1
   resolution: "@yarnpkg/core@npm:4.9.1"
   dependencies:
@@ -2344,7 +2344,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"semver@npm:^7.1.2, semver@npm:^7.3.5, semver@npm:^7.8.5":
+"semver@npm:^7.3.5, semver@npm:^7.8.5":
   version: 7.8.5
   resolution: "semver@npm:7.8.5"
   bin:
@@ -2729,7 +2729,7 @@ __metadata:
   resolution: "yarn-plugin-unused-resolutions@workspace:."
   dependencies:
     "@types/node": "npm:26.6.6"
-    "@yarnpkg/builder": "npm:4.2.3"
+    "@yarnpkg/builder": "npm:4.2.4"
     "@yarnpkg/cli": "npm:^4.18.0"
     "@yarnpkg/core": "npm:^4.7.0"
     "@yarnpkg/fslib": "npm:^3.1.5"
